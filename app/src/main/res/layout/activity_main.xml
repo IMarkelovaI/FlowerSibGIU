@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1c18"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e2e4df"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Регистрация" />
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#e2e4df"
+        android:hint="Введите логин"
+        />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#e2e4df"
+        android:hint="Введите email" />
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#e2e4df"
+        android:hint="Введите пароль" />
+
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Зарегистрироваться"
+        android:layout_gravity="center"
+        android:textColor="#1b5013"
+        android:backgroundTint="#98d782"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/link_to_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:minHeight="48dp"
+        android:onClick="activity_auth"
+        android:text="Авторизоваться"
+        android:textColor="#98d782"
+        android:textSize="17sp" />
+
+</LinearLayout>

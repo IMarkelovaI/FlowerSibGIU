@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1c17"
+    tools:context=".UserActivity">
+
+    <Button
+        android:id="@+id/button_akk"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#98d782"
+        android:text="Аккаунт"
+        android:textColor="#1b5013"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1e4e50"
+        android:text="Сад"
+        android:textColor="#e2e4df"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moi_flow"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/button_light"
+        android:layout_width="267dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#98d782"
+        android:onClick="activity_light"
+        android:text="Измерить освещение"
+        android:textColor="#1b5013"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moi_flow"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_kal"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#98d782"
+        android:text="Календарь"
+        android:textColor="#1b5013"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_light"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_heal"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#98d782"
+        android:text="Здоровье"
+        android:textColor="#1b5013"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_flow"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kal"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_flow"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#98d782"
+        android:text="Растения"
+        android:textColor="#1b5013"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kal"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
